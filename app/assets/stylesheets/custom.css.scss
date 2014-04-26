@@ -1,0 +1,63 @@
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+$body-bg: #2ecc71;
+$font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-inverse-bg: white;
+$navbar-inverse-link-color: #2ecc71;
+$navbar-height: 50px;
+$brand-primary: #2ecc71;
+$navbar-brand: #2ecc71;
+@import 'bootstrap';
+
+.center {
+     text-align: center;
+}
+
+.navbar-brand {
+     font-weight: bold;
+     color: #2ecc71 !important;
+}
+
+.navbar-header {
+	color: #2ecc71;
+}
+
+.tennisline {
+	color: #ecf0f1 !important;
+}    
+
+.tennisgreen {
+     color: #2ecc71;
+}
+
+.tennisblue {
+	color: #419edd;
+}
+
+.tennsiball {
+	color: #c6ed2c !important;
+}
+
+.tennislineback {
+	background-color: #ecf0f1;
+}
+
+.tennisgreenback {
+	background-color: #2ecc71;
+}
+
+.tennisblueback {
+	background-color: #419edd;
+}
+
+
+.tennsiballback {
+	background-color: #Cc6ed2c;
+}
+
+.backcourt {
+	border-style: solid;
+    border-width: 20px;
+    border-color: #ecf0f1;
+}
