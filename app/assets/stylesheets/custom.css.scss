@@ -53,11 +53,38 @@ $navbar-brand: #2ecc71;
 
 
 .tennsiballback {
-	background-color: #Cc6ed2c;
+	background-color: #Cc6ed2c !important;
 }
 
 .backcourt {
 	border-style: solid;
     border-width: 20px;
     border-color: #ecf0f1;
+    border-radius: 5px;
+    background-color: #419edd; 
 }
+
+.servicecourtl {
+	border-style: solid;
+    border-width: 20px;
+    border-right-width: 10px;
+    border-color: #ecf0f1;
+    background-color: #419edd; 
+    padding-top: 0px;
+
+}
+
+.servicecourtr {
+	border-style: solid;
+    border-width: 20px;
+    border-left-width: 10px;
+    border-color: #ecf0f1;
+    background-color: #419edd;
+    padding-top: 0px; 
+
+}
+
+.nopad {
+	padding-top: 0px;
+}
+
