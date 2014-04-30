@@ -3,8 +3,8 @@
 
 $body-bg: #2ecc71;
 $font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$navbar-inverse-bg: white;
-$navbar-inverse-link-color: #2ecc71;
+$navbar-inverse-bg: #ecf0f1;
+
 $navbar-height: 50px;
 $brand-primary: #2ecc71;
 $navbar-brand: #2ecc71;
@@ -16,7 +16,7 @@ $navbar-brand: #2ecc71;
 
 .navbar-brand {
      font-weight: bold;
-     color: #2ecc71 !important;
+     color: #419edd !important;
 }
 
 .navbar-header {
@@ -28,15 +28,15 @@ $navbar-brand: #2ecc71;
 }    
 
 .tennisgreen {
-     color: #2ecc71;
+     color: #2ecc71 !important;
 }
 
 .tennisblue {
 	color: #419edd;
 }
 
-.tennsiball {
-	color: #c6ed2c !important;
+.tennisball {
+	color: #C6ED2C !important;
 }
 
 .tennislineback {
@@ -52,8 +52,8 @@ $navbar-brand: #2ecc71;
 }
 
 
-.tennsiballback {
-	background-color: #Cc6ed2c !important;
+.tennisballback {
+	background-color: #C6ED2C !important;
 }
 
 .backcourt {
@@ -84,7 +84,53 @@ $navbar-brand: #2ecc71;
 
 }
 
+.backcourt2 {
+	border-style: solid;
+    border-width: 20px;
+    border-color: #ecf0f1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #419edd;
+    border-bottom-width: 0;
 
+}
+
+.headline {
+
+font-size: 62px;
+}
+
+
+.signupforms {
+
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brandfontsize {
+
+	font-size: 20px;
+}
+
+.backcourt3 {
+	border-style: solid;
+    border-width: 20px;
+    border-color: #ecf0f1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #419edd;
+    border-top-width: 0;
+
+}
+
+.infoblue {
+  color: #39b3d7 !important;
+}
+
+.infoblueback {
+  background-color: #39b3d7 !important;
+}
 
 
 
