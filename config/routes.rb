@@ -1,5 +1,7 @@
 Tennis::Application.routes.draw do
 
+  resources :courts
+
   devise_for :users
   root "pages#home"
   

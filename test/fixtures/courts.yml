@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  facility: MyString
+  description: MyText
+  net: 1
+  fence: 1
+  bench: 1
+  number: 1
+  rename: 1
+  region: MyString
+  paintoncourt: 1
+
+two:
+  facility: MyString
+  description: MyText
+  net: 1
+  fence: 1
+  bench: 1
+  number: 1
+  rename: 1
+  region: MyString
+  paintoncourt: 1

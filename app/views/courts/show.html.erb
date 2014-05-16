@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Facility:</strong>
+  <%= @court.facility %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @court.description %>
+</p>
+
+<p>
+  <strong>Net:</strong>
+  <%= @court.net %>
+</p>
+
+<p>
+  <strong>Fence:</strong>
+  <%= @court.fence %>
+</p>
+
+<p>
+  <strong>Bench:</strong>
+  <%= @court.bench %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @court.number %>
+</p>
+
+<p>
+  <strong>Rename:</strong>
+  <%= @court.rename %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @court.region %>
+</p>
+
+<p>
+  <strong>Paintoncourt:</strong>
+  <%= @court.paintoncourt %>
+</p>
+
+<%= link_to 'Edit', edit_court_path(@court) %> |
+<%= link_to 'Back', courts_path %>

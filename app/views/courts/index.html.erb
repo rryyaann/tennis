@@ -1,0 +1,45 @@
+<div class="container">
+<h1>Listing courts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Facility</th>
+      <th>Description</th>
+      <th>Net</th>
+      <th>Fence</th>
+      <th>Bench</th>
+      <th>Number</th>
+      <th>Rename</th>
+      <th>Region</th>
+      <th>Paintoncourt</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @courts.each do |court| %>
+      <tr>
+        <td><%= court.facility %></td>
+        <td><%= court.description %></td>
+        <td><%= court.net %></td>
+        <td><%= court.fence %></td>
+        <td><%= court.bench %></td>
+        <td><%= court.number %></td>
+        <td><%= court.rename %></td>
+        <td><%= court.region %></td>
+        <td><%= court.paintoncourt %></td>
+        <td><%= link_to 'Show', court %></td>
+        <td><%= link_to 'Edit', edit_court_path(court) %></td>
+        <td><%= link_to 'Destroy', court, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Court', new_court_path %>
+</div>
