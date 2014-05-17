@@ -31,9 +31,9 @@
         <td><%= court.rename %></td>
         <td><%= court.region %></td>
         <td><%= court.paintoncourt %></td>
-        <td><%= link_to 'Show', court %></td>
-        <td><%= link_to 'Edit', edit_court_path(court) %></td>
-        <td><%= link_to 'Destroy', court, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', court, class: "btn btn-link" %></td>
+        <td><%= link_to 'Edit', edit_court_path(court), class: "btn btn-link" %></td>
+        <td><%= link_to 'Destroy', court, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -41,5 +41,5 @@
 
 <br>
 
-<%= link_to 'New Court', new_court_path %>
+<%= link_to 'New Court', new_court_path, class: "btn btn-link" %>
 </div>

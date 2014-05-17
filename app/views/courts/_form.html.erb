@@ -26,26 +26,32 @@
   <div class="form-group">
     <%= f.label :number_of_courts %><br>
     <%= f.number_field :number, :autofocus => true, class: "form-control" %>
+    <span class=" center help-block">Enter Integer</span>
   </div>
   <div class="form-group">
     <%= f.label :net_ads %><br>
     <%= f.number_field :net, :autofocus => true, class: "form-control" %>
+    <span class=" center help-block">Enter "0" for not available, "1" if available</span>
   </div>
   <div class="form-group">
     <%= f.label :fence_ads %><br>
     <%= f.number_field :fence, :autofocus => true, class: "form-control" %>
+    <span class=" center help-block">Enter "0" for not available, "1" if available</span>
   </div>
   <div class="form-group">
     <%= f.label :bench_ads %><br>
     <%= f.number_field :bench, :autofocus => true, class: "form-control" %>
+    <span class=" center help-block">Enter "0" for not available, "1" if available</span>
   </div>
    <div class="form-group">
     <%= f.label :painted_on_court_ads %><br>
     <%= f.number_field :paintoncourt, :autofocus => true, class: "form-control" %>
+    <span class=" center help-block">Enter "0" for not available, "1" if available</span>
   </div>
   <div class="form-group">
     <%= f.label :renaming_rights %><br>
     <%= f.number_field :rename, :autofocus => true, class: "form-control" %>
+    <span class=" center help-block">Enter "0" for not available, "1" if available</span>
   </div>
   <div class="form-group">
     <%= f.submit class: "btn btn-primary" %>
