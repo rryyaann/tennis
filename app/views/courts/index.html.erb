@@ -5,9 +5,9 @@
 
 
     <% @courts.each do |court| %>
-    <div class="col-md-6">
+    <div class="col-md-6 courtsheight">
       <div class=panel panel-default">
-        <div class="panel-heading centering center recentcourts">
+        <div class="panel-heading centering center recentcourts courtstop">
         </br>
           <img class="img-rounded" <%= image_tag court.image.url(:medium) %>
           </br>
@@ -15,40 +15,40 @@
           <strong><h4 class="tennisblue"><%= court.number %> <%= court.description %> Courts in <%= court.region %></h4</strong>
         </div>
 
-        <div class="panel-body">
-          <p class="center tennisgreen">SPONSORSHIP OPPORTUNITIES AVAILABLE:</p> 
+        <div class="panel-body courtsbottom">
+          <p class="center tennisgreen">SPONSORSHIP OPPORTUNITIES:</p> 
           <p class="tennisblue center">Net Ads
           <% if court.net == 0 %>
           <span class="glyphicon glyphicon-remove"></span> 
           <% else %>
           <span class="glyphicon glyphicon-ok"></span>
           <% end %>
-          &nbsp;&nbsp;&nbsp;Fence Ads
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fence Ads
           <% if court.fence == 0 %>
           <span class="glyphicon glyphicon-remove"></span> 
           <% else %>
           <span class="glyphicon glyphicon-ok"></span>
-          <% end %>&nbsp;&nbsp;&nbsp;Court Name Signs <span class="glyphicon glyphicon-ok"></span>  </p>
+          <% end %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Court Name Signs <span class="glyphicon glyphicon-ok"></span>  </p>
           <p class="tennisblue center">Court Bench Ads
           <% if court.bench == 0 %>
           <span class="glyphicon glyphicon-remove"></span> 
           <% else %>
           <span class="glyphicon glyphicon-ok"></span>
           <% end %>
-          &nbsp;&nbsp;&nbsp;Painted Court Surface Ads
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Painted Court Surface Ads
           <% if court.paintoncourt == 0 %>
           <span class="glyphicon glyphicon-remove"></span> 
           <% else %>
           <span class="glyphicon glyphicon-ok"></span>
           <% end %></p>
           <p class="tennisblue center">Tennis Center Renaming Rights
-          <% if court.fence == 0 %>
+          <% if court.rename == 0 %>
           <span class="glyphicon glyphicon-remove"></span> 
           <% else %>
           <span class="glyphicon glyphicon-ok"></span>
           <% end %>
         </p>
-        <p class="center centering"><%= link_to contact_path do %><button type="button" class="btn btn-info tennisball btn-sm"><strong><span class="glyphicon glyphicon-heart"></span>  &nbsp;Sponsor Courts Now</strong></button><% end %></p>
+        <p class="center centering"><%= link_to contact_path do %><button type="button" class="btn btn-info tennisball btn-sm"><strong><span class="glyphicon glyphicon-heart"></span>  &nbsp;Sponsor These Courts</strong></button><% end %></p>
           <% if court.user == current_user %>
           <%= link_to 'Show', court, class: "btn btn-link" %>
           <%= link_to 'Edit', edit_court_path(court), class: "btn btn-link" %>

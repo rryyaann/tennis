@@ -4,7 +4,7 @@ class CourtsController < ApplicationController
   # GET /courts
   # GET /courts.json
   def index
-    @courts = Court.all
+    @courts = Court.all.order("created_at DESC")
   end
 
   # GET /courts/1
