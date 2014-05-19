@@ -3,7 +3,7 @@ Tennis::Application.routes.draw do
   resources :courts
 
   devise_for :users
-  root "pages#home"
+  root "courts#index"
   
   get "about" => "pages#about"
   get "contact" => "pages#contact"

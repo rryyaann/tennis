@@ -25,6 +25,7 @@ class CourtsController < ApplicationController
   # POST /courts.json
   def create
     @court = Court.new(court_params)
+    @court.user_id = current_user.id
 
     respond_to do |format|
       if @court.save
@@ -69,6 +70,6 @@ class CourtsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def court_params
-      params.require(:court).permit(:facility, :description, :net, :fence, :bench, :number, :rename, :region, :paintoncourt)
+      params.require(:court).permit(:facility, :description, :net, :fence, :bench, :number, :rename, :region, :paintoncourt, :image)
     end
 end

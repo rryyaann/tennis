@@ -1,4 +1,8 @@
+<div class="container">
+
 <p id="notice"><%= notice %></p>
+
+<%= image_tag @court.image.url(:medium) %>
 
 <p>
   <strong>Facility:</strong>
@@ -47,3 +51,5 @@
 
 <%= link_to 'Edit', edit_court_path(@court), class: "btn btn-link" %> |
 <%= link_to 'Back', courts_path, class: "btn btn-link" %>
+
+</div>
