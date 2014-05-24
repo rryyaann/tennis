@@ -48,7 +48,7 @@
           <span class="glyphicon glyphicon-ok"></span>
           <% end %>
         </p>
-        <p class="center centering"><%= link_to contact_path do %><button type="button" class="btn btn-info tennisball btn-sm"><strong><span class="glyphicon glyphicon-heart"></span>  &nbsp;Sponsor These Courts</strong></button><% end %></p>
+        <p class="center centering"><%= link_to contact_path do %><button type="button" class="btn btn-success btn-sm"><strong><span class="glyphicon glyphicon-heart"></span>  &nbsp;Sponsor These Courts</strong></button><% end %></p>
           <% if court.user == current_user %>
           <%= link_to 'Show', court, class: "btn btn-link" %>
           <%= link_to 'Edit', edit_court_path(court), class: "btn btn-link" %>
