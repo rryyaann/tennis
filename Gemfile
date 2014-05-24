@@ -13,6 +13,7 @@ gem 'devise'
 gem "paperclip", "~> 3.0"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem 'newrelic_rpm'
+gem "figaro"
 
 group :production do
   gem 'pg'
